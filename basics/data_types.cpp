@@ -18,5 +18,13 @@ int main(){
     cout << "sizeof(pi) = " << sizeof(pi) << '\n';
     cout << "sizeof(grade) = " << sizeof(grade) << '\n';
     cout << "sizeof(isStudent) = " << sizeof(isStudent)<< '\n';
+
+    cout << endl;
+
+    cout << "Address of (age) = " << &age << '\n';
+    cout << "Address of (pi) = " << &pi << '\n';
+    cout << "Address of (grade) = " << (void*)&grade << '\n';  // void* --> treats char as a generic pointer and prints the address of grade instead of its stored value.
+    cout << "Address of (isStudent) = " << &isStudent << '\n';
+
     
 }
